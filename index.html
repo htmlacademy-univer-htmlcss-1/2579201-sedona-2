@@ -6,30 +6,40 @@
   </head>
   <body>
     <header class="header">
-      <ul class="header__list header-list">
-        <li class="header-list__item">
-          <img src="#" alt="" />
-          <nav class="navigation">
-            <ul>
-              <li class="navigation__item">Главная</li>
-              <li class="navigation__item">О Седоне</li>
-              <li class="navigation__item">Гостиницы</li>
-            </ul>
-          </nav>
+      <li class="header-list__item">
+        <a href="#">
+          <img src="#" alt="Иконка Sedona" />
+        </a>
+        <nav class="navigation">
+          <ul>
+            <li class="navigation__item"><a href="#">Главная</a></li>
+            <li class="navigation__item"><a href="#">О Седоне</a></li>
+            <li class="navigation__item"><a href="#">Гостиницы</a></li>
+          </ul>
+        </nav>
+      </li>
+      <ul class="header-list__item">
+        <li>
+          <button class="header-list__btn">
+            <img src="#" alt="Иконка поиска" />
+          </button>
         </li>
-        <li class="header-list__item">
+        <li>
           <button class="header-list__btn">
-            <img src="#" alt="" />
+            <img src="#" alt="Иконка избранного" />
           </button>
-          <button class="header-list__btn">
-            <img src="#" alt="" />
-          </button>
-          <button class="header-list__btn">Хочу сюда!</button>
+        </li>
+        <li>
+          <a href="/catalog.html" class="header-list__btn">Хочу сюда!</a>
         </li>
       </ul>
     </header>
     <main>
-      <section class="introduction"><img src="#" alt="" /></section>
+      <section class="introduction">
+        <img class="introduction__welcome" src="#" alt="Приветствие" />
+        <img class="introduction__name" src="#" alt="Sedona" />
+        <img class="introduction__phrase" src="#" alt="Фраза города" />
+      </section>
       <section class="advantages">
         <header class="advantages__header">
           <h2>Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -43,7 +53,7 @@
                 Седона — не аттракцион для туристов, там течёт своя жизнь
               </dd>
             </dl>
-            <div><img src="#" alt="" /></div>
+            <div><img src="#" alt="фото города" /></div>
           </li>
           <li class="advantages-list__item">
             <dl>
@@ -69,7 +79,7 @@
             </dl>
           </li>
           <li class="advantages-list__item">
-            <img src="#" alt="" />
+            <img src="#" alt="фото моста дьявола" />
             <dl class="advantages-list__wrapper">
               <dt class="advantages-list__title">Там есть мост дьявола</dt>
               <dd class="advantages-list__text">
@@ -90,21 +100,21 @@
         </header>
         <ul class="conditions__list">
           <li class="conditions-list__item conditions-item">
-            <img class="conditions-item__img" src="#" alt="" />
+            <img class="conditions-item__img" src="#" alt="иконка дома" />
             <h3 class="conditions-item__title">Жильё</h3>
             <p class="conditions-item__text">
               Рекомендуем пожить в настоящем мотеле, всё как в кино!
             </p>
           </li>
           <li class="conditions-list__item conditions-item">
-            <img class="conditions-item__img" src="#" alt="" />
+            <img class="conditions-item__img" src="#" alt="иконка бургера" />
             <h3 class="conditions-item__title">Еда</h3>
             <p class="conditions-item__text">
               Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
             </p>
           </li>
           <li class="conditions-list__item conditions-item">
-            <img class="conditions-item__img" src="#" alt="" />
+            <img class="conditions-item__img" src="#" alt="иконка подарка" />
             <h3 class="conditions-item__title">Сувениры</h3>
             <p class="conditions-item__text">
               Не только китайского, но и настоящего местного производства!
@@ -123,31 +133,43 @@
           <button class="search__btn">Поиск гостиницы в седоне</button>
         </header>
       </section>
-      <form class="form" action="#">
-        <h3 class="form__title">Подпишитесь на рассылку</h3>
-        <p class="form__text">
-          Только полезная информация и никакого спама, честное бойскаутское
-        </p>
-        <div class="form__block">
-          <input class="form__inp" type="email" placeholder="Ваш e-mail" />
-          <button class="form__btn">Подписаться</button>
-        </div>
-      </form>
+      <section class="form">
+        <header class="form__header">
+          <h3 class="form__title">Подпишитесь на рассылку</h3>
+          <p class="form__text">
+            Только полезная информация и никакого спама, честное бойскаутское
+          </p>
+        </header>
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <div class="form__block">
+            <input class="form__inp" type="email" placeholder="Ваш e-mail" />
+            <button type="submit" class="form__btn">Подписаться</button>
+          </div>
+        </form>
+      </section>
     </main>
     <footer class="footer">
       <ul class="footer__list footer-list">
         <li class="footer-list__item">
-          <img src="#" alt="" />
+          <a class="footer__link" href="#">
+            <img src="#" alt="Иконка ВК" />
+          </a>
         </li>
         <li class="footer-list__item">
-          <img src="#" alt="" />
+          <a class="footer__link" href="#">
+            <img src="#" alt="Иконка Телеграма" />
+          </a>
         </li>
         <li class="footer-list__item">
-          <img src="#" alt="" />
+          <a class="footer__link" href="#">
+            <img src="#" alt="Иконка Ютуба" />
+          </a>
         </li>
       </ul>
-      <h2 class="footer__number">+7 (812) 812-12-12</h2>
-      <img class="footer__icon" src="#" alt="" />
+      <a href="tel:+78128121212" class="footer__number">+7 (812) 812-12-12</a>
+      <a href="https://htmlacademy.ru/" class="footer__icon"
+        ><img src="#" alt="лого htmlacademy"
+      /></a>
     </footer>
   </body>
 </html>
