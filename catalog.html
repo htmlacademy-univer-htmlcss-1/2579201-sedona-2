@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Страница каталога</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="header">
@@ -31,14 +32,14 @@
           </button>
         </li>
         <li>
-          <a class="header-list__btn">Хочу сюда!</a>
+          <a class="header-list__btn btn">Хочу сюда!</a>
         </li>
       </ul>
     </header>
     <main>
       <section class="filters">
         <header class="fiters__header">
-          <h1 class="filters__title">Гостиницы Седоны</h1>
+          <h1 class="filters__title heading-one">Гостиницы Седоны</h1>
           <ul class="filters__breadcrumbs">
             <li>
               <a href="index.html"><img src="img/icons/minihome.svg" alt="иконка домика"></a>
@@ -105,20 +106,20 @@
                 </label>
               </div>
             </fieldset>
-            <div>
-              <button type="submit">Применить</button>
-              <button type="reset">Сбросить</button>
+            <div class="filters__buttons">
+              <button class="filters__submit btn" type="submit">Применить</button>
+              <button class="filters__reset btn" type="reset">Сбросить</button>
             </div>
           </form>
         </header>
       </section>
       <section class="catalog">
         <header class="catalog__header">
-          <h2 class="catalog__title">Найдено гостиниц: 38</h2>
+          <h2 class="catalog__title heading-two">Найдено гостиниц: 38</h2>
           <select class="catalog__select" aria-label="Сортировка">
-            <option value="from-lowest">Сначала дешевые</option>
-            <option value="from-highest">Сначала дорогие</option>
-            <option value="from-popular">Популярные</option>
+            <option value="from-lowest text-blocks">Сначала дешевые</option>
+            <option value="from-highest text-blocks">Сначала дорогие</option>
+            <option value="from-popular text-blocks">Популярные</option>
           </select>
           <ul class="catalog__view catalog-view">
             <li class="catalog-view__list">
