@@ -145,6 +145,7 @@ body {
 }
 
 
+
 /* Catalog */
 
 .filters{
@@ -181,4 +182,41 @@ body {
 
 .filters__reset.btn{
     background: inherit;
+}
+
+
+.catalog-item__title.heading-two {
+    color: black;
+    text-decoration: none;
+}
+
+
+.catalog-item__desc.btn{
+    background: #756157;
+    font-size: 16px;
+    line-height: 20px;
+}
+.catalog-item__like.btn{
+    font-size: 16px;
+    line-height: 20px;
+    background: #82b3d3;
+}
+
+.catalog-item__like.btn.btn-favorite{
+    background: #7DB54F;
+}
+
+.catalog-item__score{
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.form.no-bg{
+    background: none;
+}
+.form__text{
+    color: #3333;
+}
+.form__title.heading-two{
+    color: black;
 }
