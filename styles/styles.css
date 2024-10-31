@@ -183,6 +183,10 @@ body {
   background: inherit;
 }
 
+.catalog-item__wrapper a{
+  text-decoration: none;
+}
+
 .catalog-item__title.heading-two {
   color: black;
   text-decoration: none;
