@@ -21,6 +21,10 @@ body {
   color: black;
 }
 
+address {
+  font-style: normal;
+}
+
 .visually-hidden {
   display: none;
 }
@@ -69,8 +73,14 @@ body {
   line-height: 20px;
 }
 
+.navigation__item a {
+  color: #000000;
+  text-decoration: none;
+}
+
 .introduction {
   background: url("../img/main/sedona-background.jpg") center no-repeat;
+  background-color: #756157;
   background-size: cover;
 }
 
@@ -128,6 +138,7 @@ body {
   background: url("../img/main/subscribe-background.jpg") no-repeat center;
   background-size: cover;
   color: white;
+  background-color: #756157;
 }
 
 .form__btn {
@@ -135,8 +146,24 @@ body {
   color: white;
 }
 
+.form.no-bg {
+  background: none;
+  color: #000000;
+}
+
+.form.no-bg.form__text {
+  color: #333333;
+}
+
+.form.no-bg.form__title.heading-two {
+  color: black;
+}
+
 .footer__number {
   color: black;
+  text-decoration: none;
+  font-size: 40px;
+  line-height: 40px;
 }
 .footer__number:hover {
   color: #756157;
@@ -150,6 +177,7 @@ body {
 
 .filters {
   background: url("../img/catalog/catalog-background.jpg") no-repeat center;
+  background-color: #756157;
   background-size: cover;
   color: #fff;
 }
@@ -183,7 +211,7 @@ body {
   background: inherit;
 }
 
-.catalog-item__wrapper a{
+.catalog-item__wrapper a {
   text-decoration: none;
 }
 
@@ -212,14 +240,14 @@ body {
   line-height: 20px;
 }
 
-.form.no-bg {
-  background: none;
+.pagination__item a{
+  line-height: 36px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffff;
+  background: #82B3D3;
 }
-
-.form__text {
-  color: #333333;
-}
-
-.form__title.heading-two {
-  color: black;
+a.pagination__link.pagination-active {
+  color: #000000;
+  background: #F2F2F2;
 }
