@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Страница каталога</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="header">
@@ -31,14 +32,14 @@
           </button>
         </li>
         <li>
-          <a class="header-list__btn">Хочу сюда!</a>
+          <a class="header-list__btn btn">Хочу сюда!</a>
         </li>
       </ul>
     </header>
     <main>
       <section class="filters">
         <header class="fiters__header">
-          <h1 class="filters__title">Гостиницы Седоны</h1>
+          <h1 class="filters__title heading heading-one">Гостиницы Седоны</h1>
           <ul class="filters__breadcrumbs">
             <li>
               <a href="index.html"><img src="img/icons/minihome.svg" alt="иконка домика"></a>
@@ -105,20 +106,20 @@
                 </label>
               </div>
             </fieldset>
-            <div>
-              <button type="submit">Применить</button>
-              <button type="reset">Сбросить</button>
+            <div class="filters__buttons">
+              <button class="filters__submit btn" type="submit">Применить</button>
+              <button class="filters__reset btn" type="reset">Сбросить</button>
             </div>
           </form>
         </header>
       </section>
       <section class="catalog">
         <header class="catalog__header">
-          <h2 class="catalog__title">Найдено гостиниц: 38</h2>
+          <h2 class="catalog__title heading heading-two">Найдено гостиниц: 38</h2>
           <select class="catalog__select" aria-label="Сортировка">
-            <option value="from-lowest">Сначала дешевые</option>
-            <option value="from-highest">Сначала дорогие</option>
-            <option value="from-popular">Популярные</option>
+            <option value="from-lowest text-blocks">Сначала дешевые</option>
+            <option value="from-highest text-blocks">Сначала дорогие</option>
+            <option value="from-popular text-blocks">Популярные</option>
           </select>
           <ul class="catalog__view catalog-view">
             <li class="catalog-view__list">
@@ -143,15 +144,15 @@
             <article class="catalog-item__wrapper">
               <a href="#">
                 <img src="img/catalog/amara.jpg" width="300" height="212" alt="фото Amara Resort & Spa" class="catalog-item__img">
-                <h3 class="catalog-item__title">Amara Resort & Spa</h3>
+                <h3 class="catalog-item__title heading heading-three">Amara Resort & Spa</h3>
               </a>
               <div class="catalog-item__info">
-                <p class="catalog-item__type">Гостиница</p>
-                <p class="catalog-item__price">От 4000 ₽</p>
+                <p class="catalog-item__type text-blocks">Гостиница</p>
+                <p class="catalog-item__price text-blocks">От 4000 ₽</p>
               </div>
               <div class="catalog-item__btns">
-                <a class="catalog-item__desc" href="#"> Подробнее </a>
-                <button class="catalog-item__like">В избранное</button>
+                <a class="catalog-item__desc btn" href="#"> Подробнее </a>
+                <button class="catalog-item__like btn">В избранное</button>
               </div>
               <div class="catalog-item__rating">
                 <ul class="catalog-item__stars">
@@ -176,15 +177,15 @@
             <article class="catalog-item__wrapper">
               <a href="#">
                 <img src="img/catalog/villas.jpg" width="300" height="212" alt="фото Villas at Poco Diablo" class="catalog-item__img">
-                <h3 class="catalog-item__title">Villas at Poco Diablo</h3>
+                <h3 class="catalog-item__title heading heading-three">Villas at Poco Diablo</h3>
               </a>
               <div class="catalog-item__info">
-                <p class="catalog-item__type">Гостиница</p>
-                <p class="catalog-item__price">От 6000 ₽</p>
+                <p class="catalog-item__type text-blocks">Гостиница</p>
+                <p class="catalog-item__price text-blocks">От 6000 ₽</p>
               </div>
               <div class="catalog-item__btns">
-                <a class="catalog-item__desc" href="#"> Подробнее </a>
-                <button class="catalog-item__like">В избранное</button>
+                <a class="catalog-item__desc btn" href="#"> Подробнее </a>
+                <button class="catalog-item__like btn btn-favorite">В избранном</button>
               </div>
               <div class="catalog-item__rating">
                 <ul class="catalog-item__stars">
@@ -209,15 +210,15 @@
             <article class="catalog-item__wrapper">
               <a href="#">
                 <img src="img/catalog/desert.jpg" width="300" height="212" alt="фото Desert Quail Inn" class="catalog-item__img">
-                <h3 class="catalog-item__title">Desert Quail Inn</h3>
+                <h3 class="catalog-item__title heading heading-three">Desert Quail Inn</h3>
               </a>
               <div class="catalog-item__info">
-                <p class="catalog-item__type">Гостиница</p>
-                <p class="catalog-item__price">От 2500 ₽</p>
+                <p class="catalog-item__type text-blocks">Гостиница</p>
+                <p class="catalog-item__price text-blocks">От 2500 ₽</p>
               </div>
               <div class="catalog-item__btns">
-                <a class="catalog-item__desc" href="#">Подробнее</a>
-                <button class="catalog-item__like">В избранное</button>
+                <a class="catalog-item__desc btn" href="#">Подробнее</a>
+                <button class="catalog-item__like btn">В избранное</button>
               </div>
               <div class="catalog-item__rating">
                 <ul class="catalog-item__stars">
@@ -239,15 +240,15 @@
             <article class="catalog-item__wrapper">
               <a href="#">
                 <img src="img/catalog/greenTree.jpg" width="300" height="212" alt="фото GreenTree Inn" class="catalog-item__img">
-                <h3 class="catalog-item__title">GreenTree Inn</h3>
+                <h3 class="catalog-item__title heading heading-three">GreenTree Inn</h3>
               </a>
               <div class="catalog-item__info">
-                <p class="catalog-item__type">Гостиница</p>
-                <p class="catalog-item__price">От 1500 ₽</p>
+                <p class="catalog-item__type text-blocks">Гостиница</p>
+                <p class="catalog-item__price text-blocks">От 1500 ₽</p>
               </div>
               <div class="catalog-item__btns">
-                <a class="catalog-item__desc" href="#">Подробнее</a>
-                <button class="catalog-item__like">В избранное</button>
+                <a class="catalog-item__desc btn" href="#">Подробнее</a>
+                <button class="catalog-item__like btn">В избранное</button>
               </div>
               <div class="catalog-item__rating">
                 <ul class="catalog-item__stars">
@@ -265,7 +266,7 @@
         </ul>
         <ul class="catalog__pagination pagination">
           <li class="pagination__item">
-            <a class="pagination__link" href="#">1</a>
+            <a class="pagination__link pagination-active" href="#">1</a>
           </li>
           <li class="pagination__item">
             <a class="pagination__link" href="#">2</a>
@@ -284,9 +285,9 @@
           </li>
         </ul>
       </section>
-      <section class="form">
+      <section class="form no-bg">
         <header class="form__header">
-          <h3 class="form__title">Подпишитесь на рассылку</h3>
+          <h3 class="form__title heading heading-two">Подпишитесь на рассылку</h3>
           <p class="form__text">
             Только полезная информация и никакого спама, честное бойскаутское
           </p>
