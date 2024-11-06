@@ -8,14 +8,14 @@
   <body>
     <header class="header">
       <div class="header-list">
-        <a href="#">
-          <img class="header__logo" src="img/icons/logo.svg" width="140" height="70" alt="Иконка Sedona">
+        <a class="header__logo" href="#">
+          <img src="img/icons/logo.svg" width="140" height="70" alt="Иконка Sedona">
         </a>
         <nav class="navigation">
           <ul>
             <li class="navigation__item"><a href="#">Главная</a></li>
             <li class="navigation__item"><a href="#">О Седоне</a></li>
-            <li class="navigation__item"><a href="#">Гостиницы</a></li>
+            <li class="navigation__item"><a href="catalog.html">Гостиницы</a></li>
           </ul>
         </nav>
       </div>
@@ -45,7 +45,8 @@
         </section>
         <section class="advantages">
           <header class="advantages__header">
-            <h2 class="advantages__title heading heading-two">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+            <h2 class="advantages__title heading heading-two">Седона — небольшой городок в Аризоне, заслуживающий
+              большего!</h2>
             <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
           </header>
           <ul class="advantages__list advantages-list">
@@ -102,22 +103,28 @@
           </header>
           <ul class="conditions__list">
             <li class="conditions-list__item conditions-item dark-tile">
-              <h3 class="conditions-item__title heading heading-three">Жильё</h3>
-              <p class="conditions-item__text text-blocks">
-                Рекомендуем пожить в настоящем мотеле, всё как в кино!
-              </p>
+              <div class="conditions-item__wrapper">
+                <h3 class="conditions-item__title heading heading-three">Жильё</h3>
+                <p class="conditions-item__text text-blocks">
+                  Рекомендуем пожить в настоящем мотеле, всё как в кино!
+                </p>
+              </div>
             </li>
             <li class="conditions-list__item conditions-item">
-              <h3 class="conditions-item__title heading heading-three">Еда</h3>
-              <p class="conditions-item__text text-blocks">
-                Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
-              </p>
+              <div class="conditions-item__wrapper">
+                <h3 class="conditions-item__title heading heading-three">Еда</h3>
+                <p class="conditions-item__text text-blocks">
+                  Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+                </p>
+              </div>
             </li>
             <li class="conditions-list__item conditions-item dark-tile">
-              <h3 class="conditions-item__title heading heading-three">Сувениры</h3>
-              <p class="conditions-item__text text-blocks">
-                Не только китайского, но и настоящего местного производства!
-              </p>
+              <div class="conditions-item__wrapper">
+                <h3 class="conditions-item__title heading heading-three">Сувениры</h3>
+                <p class="conditions-item__text text-blocks">
+                  Не только китайского, но и настоящего местного производства!
+                </p>
+              </div>
             </li>
           </ul>
         </section>
@@ -127,7 +134,7 @@
               Заинтересовались?
             </h2>
             <p class="search__text">
-              Укажите предполагаемые даты поездки,<br/>и мы покажем вам лучшие предложения гостиниц в Седоне
+              Укажите предполагаемые даты поездки,<br />и мы покажем вам лучшие предложения гостиниц в Седоне
             </p>
             <button class="search__btn btn">Поиск гостиницы в седоне</button>
           </header>
