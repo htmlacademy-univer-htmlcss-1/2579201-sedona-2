@@ -8,9 +8,9 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-list__item">
+      <div class="header-list">
         <a href="index.html">
-          <img src="img/icons/logo.svg" width="140" height="70" alt="Иконка Sedona">
+          <img class="header__logo" src="img/icons/logo.svg" width="140" height="70" alt="Иконка Sedona">
         </a>
         <nav class="navigation">
           <ul>
@@ -20,7 +20,7 @@
           </ul>
         </nav>
       </div>
-      <ul class="header-list__item">
+      <ul class="header-list header-left">
         <li>
           <button class="header-list__btn">
             <img src="img/icons/search.svg" width="20" height="20" alt="Иконка поиска">
@@ -32,11 +32,12 @@
           </button>
         </li>
         <li>
-          <a class="header-list__btn btn">Хочу сюда!</a>
+          <a href="#" class="header-list__btn btn">Хочу сюда!</a>
         </li>
       </ul>
     </header>
-    <main>
+    <main class="main-container">
+      <div class="page-container">
       <section class="filters">
         <header class="fiters__header">
           <h1 class="filters__title heading heading-one">Гостиницы Седоны</h1>
@@ -46,7 +47,7 @@
             </li>
             <li><a>> Гостиницы</a></li>
           </ul>
-          <form action="https://echo.htmlacademy.ru/" method="get">
+          <form class="filters__form" action="https://echo.htmlacademy.ru/" method="get">
             <fieldset class="filters__group filters-group">
               <legend class="filters-group__title">Инфраструктура</legend>
               <ul class="filters-group__list">
@@ -93,7 +94,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="filters__group filters-group">
+            <fieldset class="filters__group filters-group filters-price">
               <legend class="filters-group__title">Стоимость, ₽:</legend>
               <div>
                 <label class="filters-group__price">
@@ -299,6 +300,7 @@
           </div>
         </form>
       </section>
+    </div>
     </main>
     <footer class="footer">
       <h2 class="visually-hidden">Социальные сети и контакты</h2>
