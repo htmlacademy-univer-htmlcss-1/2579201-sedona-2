@@ -525,6 +525,25 @@ address {
   height: 438px;
 }
 
+.catalog-item__wrapper{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.catalog-item__info{
+  display: flex;
+  justify-content: space-between;
+}
+.catalog-item__btns{
+  display: flex;
+  justify-content: space-between;
+}
+.catalog-item__rating{
+  display: flex;
+  justify-content: space-between;
+}
 .catalog-view__item{
   width: 46px;
   height: 46px;
