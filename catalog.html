@@ -16,11 +16,12 @@
           <ul>
             <li class="navigation__item"><a href="index.html">Главная</a></li>
             <li class="navigation__item"><a href="#">О Седоне</a></li>
-            <li class="navigation__item"><a href="#">Гостиницы</a></li>
+            <li class="navigation__item active"><a href="#">Гостиницы</a></li>
+
           </ul>
         </nav>
       </div>
-      <ul class="header-list header-left">
+      <ul class="header-list header-right">
         <li>
           <button class="header-list__btn">
             <img src="img/icons/search.svg" width="20" height="20" alt="Иконка поиска">
@@ -72,7 +73,7 @@
                 </ul>
               </fieldset>
               <fieldset class="filters__group filters-group">
-                <legend class="filters-group__title">тип жилья</legend>
+                <legend class="filters-group__title">Тип жилья</legend>
                 <ul class="filters-group__list">
                   <li>
                     <label class="filters-group__item">
@@ -117,31 +118,33 @@
         <section class="catalog">
           <header class="catalog__header">
             <h2 class="catalog__title heading heading-two">Найдено гостиниц: 38</h2>
-            <select class="catalog__select" aria-label="Сортировка">
-              <option value="from-lowest text-blocks">Сначала дешевые</option>
-              <option value="from-highest text-blocks">Сначала дорогие</option>
-              <option value="from-popular text-blocks">Популярные</option>
-            </select>
-            <ul class="catalog__view catalog-view">
-              <li class="catalog-view__list">
-                <button class="catalog-view__item">
-                  <img class="catalog-view__img" src="img/icons/tiles.svg" alt="Отображение плитками" width="16"
-                    height="14">
-                </button>
-              </li>
-              <li class="catalog-view__list">
-                <button class="catalog-view__item">
-                  <img class="catalog-view__img" src="img/icons/cards.svg" alt="Отображение карточками" width="16"
-                    height="14">
-                </button>
-              </li>
-              <li class="catalog-view__list">
-                <button class="catalog-view__item">
-                  <img class="catalog-view__img" src="img/icons/list.svg" alt="Отображение списком" width="16"
-                    height="14">
-                </button>
-              </li>
-            </ul>
+            <div class="catalog-right">
+              <select class="catalog__select" aria-label="Сортировка">
+                <option value="from-lowest text-blocks">Сначала дешевые</option>
+                <option value="from-highest text-blocks">Сначала дорогие</option>
+                <option value="from-popular text-blocks">Популярные</option>
+              </select>
+              <ul class="catalog__view catalog-view">
+                <li class="catalog-view__list">
+                  <button class="catalog-view__item active">
+                    <img class="catalog-view__img" src="img/icons/tiles.svg" alt="Отображение плитками" width="16"
+                      height="14">
+                  </button>
+                </li>
+                <li class="catalog-view__list">
+                  <button class="catalog-view__item">
+                    <img class="catalog-view__img" src="img/icons/cards.svg" alt="Отображение карточками" width="16"
+                      height="14">
+                  </button>
+                </li>
+                <li class="catalog-view__list">
+                  <button class="catalog-view__item">
+                    <img class="catalog-view__img" src="img/icons/list.svg" alt="Отображение списком" width="16"
+                      height="14">
+                  </button>
+                </li>
+              </ul>
+            </div>
           </header>
           <ul class="catalog__list">
             <li class="catalog__item catalog-item">
