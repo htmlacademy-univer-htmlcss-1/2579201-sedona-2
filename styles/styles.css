@@ -143,8 +143,8 @@ address {
 .header-list__btn.heart::after {
   content: '12';
   position: absolute;
-  top: -11px;
-  right: -11px;
+  top: 6px;
+  right: 2px;
   display: block;
   background: #7DB54F;
   color: #fff;
@@ -178,6 +178,9 @@ address {
 
 .header-list__ico{
   margin: 0;
+}
+
+.header-list__ico .header-list__btn {
   padding: 19px 13px;
 }
 
@@ -281,7 +284,6 @@ address {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 62px 0;
 }
 
 .advantages-img{
@@ -305,18 +307,21 @@ address {
 
 .advantages-list__title{
   width: 175px;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .advantages-list__item .advantages-list__title::after{
   content: '';
-  position: absolute;
-  left: 58px;
-  bottom: -30px;
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 60px;
   height: 2px;
   background: #0000004D;
+  margin: 30px 0;
 }
 .advantages-list__item.darkest-tile .advantages-list__title::after{
   background: #fff;
@@ -493,17 +498,21 @@ address {
 .footer-list {
   list-style: none;
   display: flex;
-  gap: 0 30px;
+  /* gap: 0 30px; */
   padding: 0;
   margin: 0;
   width: 150px;
   flex-wrap: wrap;
 }
 
-.footer-list__item{
-  padding: 17px 0;
-}
 
+.footer__link{
+  display: flex;
+  height: 40px;
+  width: 48px;
+  align-items: center;
+  justify-content: center;
+}
 .contacts{
   margin: 40px 0 40px 0;
 }
@@ -527,19 +536,19 @@ address {
 .footer__number img:active{
   color: #7561574D;
 }
-.footer__logo{
-  fill: black;
-}
-.footer__logo:hover {
+
+
+.footer__icon:hover .footer__logo{
   fill: #756157;
 }
 
-.footer__logo:focus {
-  color: #756157;
+.footer__icon:focus .footer__logo {
+  outline: none;
+  fill: #756157;
 }
 
-.footer__logo:active{
-  color: #7561574D;
+.footer__icon:active .footer__logo {
+  fill: #7561574D;
 }
 /* Catalog */
 
@@ -566,12 +575,15 @@ address {
   line-height: 21px;
   list-style: none;
 }
-
-.filters__breadcrumbs li:last-child:hover{
+.filters__breadcrumbs a {
+  cursor: pointer;
+}
+.filters__breadcrumbs li a:hover{
   opacity: 0.6;
+
 }
 
-.filters__breadcrumbs li:last-child:active{
+.filters__breadcrumbs li a:active{
   opacity: 0.3;
 }
 
@@ -731,7 +743,7 @@ address {
   padding: 20px;
   display: grid;
   grid-template-columns: 140px 140px;
-  gap: 20px 16px;
+  gap: 16px 20px;
 }
 
 .catalog-item__img{
@@ -783,6 +795,7 @@ address {
   text-align: end;
 }
 .catalog-item__title{
+  color: black;
   grid-column: 1/-1;
   margin-top: 16px;
 }
