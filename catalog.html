@@ -98,15 +98,23 @@
               </fieldset>
               <fieldset class="filters__group filters-group filters-price">
                 <legend class="filters-group__title">Стоимость, ₽:</legend>
-                <div>
+                <div class="filters-price__slider">
                   <label class="filters-group__price">
                     <input class="filters-group__from" name="price-from" value="0" min="0" type="number">
-                    от
+                    <span>от</span>
                   </label>
                   <label class="filters-group__price">
                     <input class="filters-group__to" name="price-to" min="0" value="9000" type="number">
-                    до
+                    <span>до</span>
                   </label>
+                </div>
+                <div class="filters-price__range filters-range">
+                  <div class="filters-range__bar">
+                    <button class="filters-range__toggle toggle-min">
+                    </button>
+                    <button class="filters-range__toggle toggle-max" >
+                    </button>
+                  </div>
                 </div>
               </fieldset>
               <div class="filters__buttons">
