@@ -708,6 +708,17 @@ input[type='checkbox'].filters-group__inp:checked::before{
   box-sizing: border-box;
   width: 100%;
   padding: 12px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.filters-group__from{
+  border-radius: 4px 0 0 4px;
+}
+
+.filters-group__to{
+  border-radius: 0 4px 4px 0;
 }
 
 .filters-group__price:hover input{
@@ -725,7 +736,7 @@ input[type='checkbox'].filters-group__inp:checked::before{
   z-index: 3;
   color: rgba(0, 0, 0, 0.3);
   right: 20px;
-  top: 7px;
+  top: 12px;
 }
 
 .filters-group__price input[type="number"]::-webkit-outer-spin-button,
@@ -756,7 +767,7 @@ input[type='checkbox'].filters-group__inp:checked::before{
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  top: -10px;
+  top: -8px;
 }
 
 .filters-range__toggle.toggle-min{
@@ -871,11 +882,16 @@ input[type='checkbox'].filters-group__inp:checked::before{
 }
 
 .catalog__select {
+  appearance: none;
   width: 292px;
   height: 49px;
   border: 2px solid #e5e5e5;
   margin-right: 70px;
-  padding: 14px 20px;
+  padding: 13px 20px;
+  font-size: 18px;
+  line-height: 21px;
+  background: url('../img/icons/arrow.svg') no-repeat;
+  background-position: right 20px center;
 }
 
 .catalog__select:hover {
@@ -1031,6 +1047,17 @@ input[type='checkbox'].filters-group__inp:checked::before{
   display: flex;
   list-style: none;
   align-items: center;
+
+}
+.catalog-item__star{
+  width: 18px;
+  height: 17px;
+  background: url('../img/icons/star.svg') no-repeat center;
+  padding-right: 6px;
+}
+
+.catalog-item__star:last-of-type{
+  padding-right: 0;
 }
 
 .pagination {
@@ -1060,6 +1087,7 @@ input[type='checkbox'].filters-group__inp:checked::before{
   font-weight: 700;
   color: #ffff;
   box-sizing: border-box;
+  border-radius: 4px;
 }
 
 a.pagination__link.pagination-active {
@@ -1117,16 +1145,15 @@ a.pagination__link.pagination-active {
 }
 
 .modal__form{
-  display: grid;
-  grid-template-columns: 247.5px 242.5px;
-  gap: 23px 88px;
+  display: flex;
+  flex-direction: column;
 }
 
 .modal__date{
-  width: 100%;
+  width: 577px;
   display: flex;
   justify-content: space-between;
-  grid-column: 1/-1;
+  margin-bottom: 23px;
 }
 
 .modal__name {
@@ -1155,7 +1182,7 @@ a.pagination__link.pagination-active {
 }
 
 .modal__text{
-  padding: 0 0 0 20px;
+  padding: 4px 0 0 20px;
   margin: 0;
   font-size: 16px;
   line-height: 21px;
@@ -1165,9 +1192,20 @@ a.pagination__link.pagination-active {
   color: red;
 }
 
+
+.modal__residents{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+
 .modal__people{
   display: flex;
   justify-content: space-between;
+}
+
+.modal__people .modal__name{
+  padding-right: 46px;
 }
 
 .modal__people:last-of-type{
@@ -1176,7 +1214,7 @@ a.pagination__link.pagination-active {
 }
 
 .modal__people:last-of-type .modal__name{
-  padding-right: 46px;
+  display: flex;
 }
 
 .modal__people .modal__input input{
@@ -1253,7 +1291,6 @@ a.pagination__link.pagination-active {
 }
 
 .modal__confirm{
-  grid-column: 1/-1;
   background: #83B3D3;
   color: white;
 }
@@ -1275,6 +1312,13 @@ a.pagination__link.pagination-active {
   appearance: none;
 }
 
+.tooltip{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding-left: 10px;
+}
+
 .tooltip-toggle{
   width: 26px;
   height: 26px;
@@ -1282,11 +1326,11 @@ a.pagination__link.pagination-active {
   outline: none;
   background: #83B3D3;
   border-radius: 50%;
-  position: relative;
+  cursor: pointer;
 }
 
 .tooltip-text{
-  display: none;
+  display: block;
   color: white;
   box-sizing: border-box;
   background: #333333;
@@ -1294,8 +1338,8 @@ a.pagination__link.pagination-active {
   width: 256px;
   height: 143px;
   position: absolute;
-  bottom: -15px;
-  left: 50%;
+  top: 43px;
+  left: -106px;
   margin-bottom: 6px;
   font-size: 16px;
   line-height: 20px;
@@ -1310,12 +1354,14 @@ a.pagination__link.pagination-active {
 
 .tooltip-text:after {
   content:'';
-  background-image: url('../img/icons/tooltip-arrow.svg');
-  width: 19px;
-  height: 9px;
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 9px solid #333333;
   position:absolute;
   bottom: 100%;
-  left:44%;
+  left: 120px;
   margin-left: auto;
   margin-right: auto;
 }
